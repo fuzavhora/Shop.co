@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (max-width: 1024px) {
   .category-products .card img{
     height: 200px !important;
@@ -160,3 +161,167 @@
   }
  
 }
+=======
+@media (max-width: 1024px) {
+  .category-products .card img{
+    height: 200px !important;
+  }
+  .category-products h3{
+    font-size: 20px !important;
+  }
+  .category-products span{
+    font-size: 12px !important;
+  }
+}
+@media (max-width:991px) {
+  .middle-custom {
+    width: 100% !important;
+  }
+
+  #header-content {
+    width: 90%;
+    margin: auto;
+  }
+  .card-item{
+    height: 200px;
+    padding: 0!important;
+  }
+  .promocode-box{
+    font-size: 12px !important;
+  }
+  .promocode-box button{
+    font-size: 15px !important;
+    padding: 10px 8px !important;
+  }
+
+}
+
+@media (max-width:767px) {
+  main {
+    padding-bottom: 200px;
+  }
+
+  .footer-inside {
+    margin-top: 200px;
+  }
+
+  .footer_top {
+    top: -18%;
+  }
+  .category-products .card img{
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 575px) {
+
+  /* #header-heading{
+    font-size: 36px;
+    line-height: 34px;
+  } */
+  #products-count {
+    border: 0 !important;
+  }
+ 
+
+  /* main{
+    padding-bottom: 250px;
+  } */
+  .footer-inside {
+    margin-top: 150px;
+  }
+
+
+}
+
+@media (max-width:500px) {
+  .pagination .btn{
+    font-size: 13px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .pagination-number{
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    font-size: 13px !important;
+    gap: 12px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  #company-bio {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: center !important;
+  }
+
+  #brand-collapse {
+    border: 0 !important;
+  }
+
+  /* #brand-collapse, #products-count, #customer-count{
+    justify-content: center !important;
+  } */
+  /* =============================
+     ======Prouct-details page====
+     ============================= */
+     .product-size > div > div{
+      font-size: 14px !important;
+      padding: 8px 13px !important;
+     }
+
+    .Review-numbers h4{
+      font-size: 20px;
+    }
+    .Review-numbers span{
+      font-size: 14px;
+    }
+    .review-filter:first-child{
+      height: 40px !important;
+      width: 40px !important;
+      padding: 0 !important;
+    }
+    .review-filter button{
+     font-size: 12px !important;
+     width: 113px !important;
+    height: 40px !important;
+    }
+}
+@media (max-width: 370px) {
+  .pagination .btn{
+    font-size: 10px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  .pagination-number{
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    font-size: 10px !important;
+    gap: 12px !important;
+  }
+}
+@media (max-width: 352px) {
+  .Review-numbers h4{
+    font-size: 18px;
+    margin-bottom: 0px !important;
+  }
+  .Review-numbers span{
+    font-size: 12px;
+  }
+  .review-filter:first-child{
+    height: 25px !important;
+    width: 25px !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .review-filter button{
+   font-size: 10px !important;
+   width: 100px !important;
+  height: 25px !important;
+  }
+ 
+}
+>>>>>>> abc567d9c5d28080d713b8df88006b7e9a6a9986
