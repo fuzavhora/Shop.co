@@ -3,12 +3,25 @@
     "development"
   ],
   "hints": {
-    "button-type": "off",
+    "button-type": "on",
+    
     "axe/name-role-value": [
       "default",
       {
-        "button-name": "off"
+        "button-name": "on"
+        
       }
     ]
   }
+}
+{
+  "connector": {...},
+  "formatters": [...],
+  "hints": {
+      "no-inline-styles": [ "warning", {
+          "requireNoStyleElement": true
+      }],
+      ...
+  },
+  ...
 }
