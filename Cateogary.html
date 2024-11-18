@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <header>
+    <div id="navbar" class="middle">
+      <div class="d-flex justify-content-between">
+        <nav class="navbar navbar-expand-lg py-0 py-3">
+          <div class="container-fluid d-flex justify-content-start  px-0 ">
+            <button class="navbar-toggler   border-0 btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand w-25 p-0 d-flex align-items-center fw-bolder m-0  align-content-center" href="#">
+              <img class="w-100 p-0" src="./assets/Brand-name/SHOP.CO.png" alt="shop.co" class="w-100 mb-0">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav   mb-2 mb-lg-0">
+                <li class="nav-item dropdown ms-lg-5 mx-sm-2 m-0 ">
+                  <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="true">
+                    Shop
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item mx-sm-2 m-0">
+                  <a class="nav-link text-black" href="#">On Sale</a>
+                </li>
+                <li class="nav-item mx-sm-2 m-0">
+                  <a class="nav-link text-black" href="#">New Arrivals</a>
+                </li>
+                <li class="nav-item ms-sm-2 me-sm-5 m-0 ">
+                  <a class="nav-link text-black">Brands</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="d-flex align-items-lg-center py-lg-0 py-3">
+          <div id="nav-search" class="d-md-block d-none">
+            <div class=" ps-md-2 pe-md-5 py-md-1  d-flex rounded-pill border-secondary-subtle bg-secondary-subtle">
+              <i id="nav-serach-icon" class="ri-search-2-line fs-5 text-secondary pe-md-3"></i>
+              <input id="nav-serach-input" class="border-1 border-0 pe-5 bg-transparent fs-6" type="search"
+                placeholder="Search for products..." aria-label="Search">
+            </div>
+          </div>
+          <div class=" ms-sm-5">
+            <div>
+              <div class="nav-icon d-flex  align-items-center gap-md-2 gap-sm-4 gap-2">
+                <i id="nav-search-middle-icon" class="ri-search-2-line fs-5 text-black d-md-none pe-md-3"></i>
+                <i class="ri-shopping-cart-2-line fs-4"></i>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 0.875C8.99747 0.875 7.0399 1.46882 5.37486 2.58137C3.70981 3.69392 2.41206 5.27523 1.64572 7.12533C0.879387 8.97543 0.678878 11.0112 1.06955 12.9753C1.46023 14.9393 2.42454 16.7435 3.84055 18.1595C5.25656 19.5755 7.06066 20.5398 9.02471 20.9305C10.9888 21.3211 13.0246 21.1206 14.8747 20.3543C16.7248 19.5879 18.3061 18.2902 19.4186 16.6251C20.5312 14.9601 21.125 13.0025 21.125 11C21.122 8.3156 20.0543 5.74199 18.1562 3.84383C16.258 1.94567 13.6844 0.877978 11 0.875ZM6.45969 17.4284C6.98195 16.7143 7.66528 16.1335 8.45418 15.7331C9.24308 15.3327 10.1153 15.124 11 15.124C11.8847 15.124 12.7569 15.3327 13.5458 15.7331C14.3347 16.1335 15.0181 16.7143 15.5403 17.4284C14.2134 18.3695 12.6268 18.875 11 18.875C9.37323 18.875 7.78665 18.3695 6.45969 17.4284ZM8.375 10.25C8.375 9.73082 8.52896 9.22331 8.8174 8.79163C9.10583 8.35995 9.5158 8.0235 9.99546 7.82482C10.4751 7.62614 11.0029 7.57415 11.5121 7.67544C12.0213 7.77672 12.489 8.02673 12.8562 8.39384C13.2233 8.76096 13.4733 9.22869 13.5746 9.73789C13.6759 10.2471 13.6239 10.7749 13.4252 11.2545C13.2265 11.7342 12.8901 12.1442 12.4584 12.4326C12.0267 12.721 11.5192 12.875 11 12.875C10.3038 12.875 9.63613 12.5984 9.14385 12.1062C8.65157 11.6139 8.375 10.9462 8.375 10.25ZM17.1875 15.8694C16.4583 14.9419 15.5289 14.1914 14.4688 13.6737C15.1444 12.9896 15.6026 12.1208 15.7858 11.1769C15.9689 10.2329 15.8688 9.25583 15.498 8.36861C15.1273 7.4814 14.5024 6.72364 13.702 6.19068C12.9017 5.65771 11.9616 5.37334 11 5.37334C10.0384 5.37334 9.09833 5.65771 8.29797 6.19068C7.49762 6.72364 6.87275 7.4814 6.50198 8.36861C6.13121 9.25583 6.0311 10.2329 6.21424 11.1769C6.39739 12.1208 6.85561 12.9896 7.53125 13.6737C6.4711 14.1914 5.54168 14.9419 4.8125 15.8694C3.89661 14.7083 3.32614 13.3129 3.1664 11.8427C3.00665 10.3725 3.2641 8.88711 3.90925 7.55644C4.55441 6.22578 5.5612 5.10366 6.81439 4.31855C8.06757 3.53343 9.5165 3.11703 10.9953 3.11703C12.4741 3.11703 13.9231 3.53343 15.1762 4.31855C16.4294 5.10366 17.4362 6.22578 18.0814 7.55644C18.7265 8.88711 18.984 10.3725 18.8242 11.8427C18.6645 13.3129 18.094 14.7083 17.1781 15.8694H17.1875Z"
+                    fill="black" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="middle">
+      <div class=" footer-divider border-bottom border-secondary-subtle border-1 mt-1 mb-3"></div>
+    </div>
+    <div class=" d-flex justify-content-between align-items-center middle pb-2 ">
+      <div class="product-path d-flex">
+        <p class="text-secondary opacity-75 ">Home <span class="px-2"> > </span></p>
+        <p class="text-dark">Casual</p>
+      </div>
+      <div class=" d-lg-none d-block">
+        <button class="btn" onclick="display()
+           "><i class=" ri-sound-module-line text-secondary"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="middle">
+      <div class="row">
+        <div class="col-md-3 border d-lg-block d-none rounded-4 p-3">
+          <div class="d-flex justify-content-between">
+            <h6>Filters</h6>
+            <i class="ri-sound-module-line text-secondary"></i>
+          </div>
+          <div class="border-bottom mt-4"></div>
+          <div class="py-4">
+            <div class="d-flex justify-content-between py-1">
+              <p>T-shirts</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Shorts</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Shirts</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Hoodie</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Jeans</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+          <div class="border-bottom mb-4"></div>
+          <div class="price-filter">
+            <label class="d-flex justify-content-between" for="price-filter">
+              <h5 class="fw-bolder">Price</h5>
+              <i class="ri-arrow-up-s-line fs-5 fw-bolder"></i>
+            </label>
+            <input class="w-100" type="range" id="price-filter">
+          </div>
+          <div class="border-bottom my-4"></div>
+          <div class="filter-color">
+            <div class="d-flex justify-content-between pb-2" for="price-filter">
+              <h5 class="fw-bolder">Colors</h5>
+              <i class="ri-arrow-up-s-line fs-5 fw-bolder"></i>
+            </div>
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+              <div class="color green border rounded-circle p-4 "></div>
+              <div class="color red border rounded-circle p-4"></div>
+              <div class="color yellow border rounded-circle  p-4"></div>
+              <div class="color orange border rounded-circle  p-4"></div>
+              <div class="color skyblue border rounded-circle  p-4"></div>
+              <div class="color blue border rounded-circle  p-4"></div>
+              <div class="color violet border rounded-circle  p-4"></div>
+              <div class="color pink border rounded-circle  p-4"></div>
+              <div class="color white border rounded-circle  p-4"></div>
+              <div class="color black border rounded-circle  p-4"></div>
+            </div>
+          </div>
+          <div class="border-bottom my-4"></div>
+          <div class="size-filter">
+            <div class="d-flex justify-content-between pb-2">
+              <h5 class="fw-bolder">Size</h5>
+              <i class="ri-arrow-up-s-line fs-5 fw-bolder"></i>
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">XX-Small</button>
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">X-Small</button>
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">Small</button>
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">Medium</button>
+              <button class="btn bg-dark text-white rounded-pill py-2 px-3 ">Large</button>
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">X-Large</button>
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">XX-Large</button>
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">3X-Large</button>
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">4X-Large</button>
+            </div>
+          </div>
+          <div class="border-bottom my-4"></div>
+          <div class="style-filter pb-2">
+            <div class="d-flex justify-content-between pb-2">
+              <h5 class="fw-bolder">Dress Style</h5>
+              <i class="ri-arrow-up-s-line fs-5 fw-bolder"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Casual</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Formal</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Party</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Gym</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+          <div class="">
+            <button class="btn bg-black w-100 text-white rounded-pill fs-5 py-2">Apply Filter</button>
+          </div>
+        </div>
+        <div class="responsive-filter col-md-3 border d-none rounded-4 p-3">
+          <div class="d-flex justify-content-between">
+            <h6>Filters</h6>
+            <i class="ri-sound-module-line text-secondary"></i>
+          </div>
+          <div class="border-bottom mt-4"></div>
+          <div class="py-4">
+            <div class="d-flex justify-content-between py-1">
+              <p>T-shirts</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Shorts</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Shirts</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Hoodie</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Jeans</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+          <div class="border-bottom mb-4"></div>
+          <div class="price-filter">
+            <label class="d-flex justify-content-between" for="price-filter">
+              <h5 class="fw-bolder">Price</h5>
+              <i class="ri-arrow-up-s-line fs-5 fw-bolder"></i>
+            </label>
+            <input class="w-100" type="range" id="price-filter">
+          </div>
+          <div class="border-bottom my-4"></div>
+          <div class="filter-color">
+            <div class="d-flex justify-content-between pb-2" for="price-filter">
+              <h5 class="fw-bolder">Colors</h5>
+              <i class="ri-arrow-up-s-line fs-5 fw-bolder"></i>
+            </div>
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+              <div class="color green border rounded-circle p-4 "></div>
+              <div class="color red border rounded-circle p-4"></div>
+              <div class="color yellow border rounded-circle  p-4"></div>
+              <div class="color orange border rounded-circle  p-4"></div>
+              <div class="color skyblue border rounded-circle  p-4"></div>
+              <div class="color blue border rounded-circle  p-4"></div>
+              <div class="color violet border rounded-circle  p-4"></div>
+              <div class="color pink border rounded-circle  p-4"></div>
+              <div class="color white border rounded-circle  p-4"></div>
+              <div class="color black border rounded-circle  p-4"></div>
+            </div>
+          </div>
+          <div class="border-bottom my-4"></div>
+          <div class="size-filter">
+            <div class="d-flex justify-content-between pb-2">
+              <h5 class="fw-bolder">Size</h5>
+              <i class="ri-arrow-up-s-line fs-5 fw-bolder"></i>
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">XX-Small</button>
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">X-Small</button>
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">Small</button>
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">Medium</button>
+              <button class="btn bg-dark text-white rounded-pill py-2 px-3 ">Large</button>
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">X-Large</button>
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">XX-Large</button>
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">3X-Large</button>
+              <button class="btn bg-secondary-subtle rounded-pill py-2 px-3 ">4X-Large</button>
+            </div>
+          </div>
+          <div class="border-bottom my-4"></div>
+          <div class="style-filter pb-2">
+            <div class="d-flex justify-content-between pb-2">
+              <h5 class="fw-bolder">Dress Style</h5>
+              <i class="ri-arrow-up-s-line fs-5 fw-bolder"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Casual</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Formal</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Party</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="d-flex justify-content-between py-1">
+              <p>Gym</p>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+          <div class="">
+            <button class="btn bg-black w-100 text-white rounded-pill fs-5 py-2">Apply Filter</button>
+          </div>
+        </div>
+        <div class="col-lg-9 mb-lg-0 mb-5">
+          <div class="heading pb-3 d-flex justify-content-between flex-wrap align-items-center">
+            <h4 class="mb-0">Casual</h4>
+            <div class="d-flex align-items-center flex-wrap gap-2 text-secondary">
+              <p class="mb-0">Showing 1-10 of 100 Products</p>
+              <div class="d-flex align-items-center">
+                <p class="mb-0">Sort by:</p>
+                <div class="dropdown">
+                  <button type="button" class="btn dropdown-toggle bg-transparent border-0" data-bs-toggle="dropdown">
+                    Most Popular
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="category-products row mb-2 mx-0 p-0">
+            <div class="card border-0 ps-0 col-sm-4  mb-lg-0 mb-4  d-flex h-100  ">
+              <div class=" d-flex flex-column justify-content-between border-0">
+                <img class="w-100 h-100 p-0 rounded-5" src="./assets/Product_image/Product-13.png" alt="">
+                <div class="card-body pb-0 ">
+                  <h5 class="product-name fw-bold">Gradient Graphic T-shirt</h5>
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <span>3.0/5</span>
+                    <h3 class="product-price m-0">$145</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 col-sm-4 mb-sm-0 mb-4  d-flex  ">
+              <div class=" border-0 d-flex flex-column justify-content-between">
+                <img class="w-100 rounded-5" src="./assets/Product_image/Product-14.png" alt="">
+                <div class="card-body  d-flex flex-column justify-content-end">
+                  <h5 class="product-name fw-bold">Polo with Tipping Details</h5>
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star-half fs-6" style="color: #FFD43B;"></i>
+                    <span>4.5/5</span>
+                    <h3 class="product-price m-0">$180</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 col-sm-4  mb-lg-0 mb-4 ps-0  d-flex justify-content-center">
+              <div class=" border-0 d-flex flex-column justify-content-between">
+                <img class="w-100 rounded-5" src="./assets/Product_image/Product-15.png" alt="">
+                <div class="card-body  d-flex flex-column justify-content-end">
+                  <h5 class="product-name fw-bold">Black Striped T-shirt</h5>
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <span>5.0/5</span>
+                    <div class="product-price d-flex align-items-center gap-3">
+                      <div class="d-flex gap-2">
+                        <h3 class="original-price m-0">$120</h3>
+                        <h3 class="discounted-price text-secondary m-0"><del>$150</del></h3>
+                      </div>
+                      <span
+                        class="discount bg-danger bg-opacity-25 py-2 text-danger rounded-pill text-center px-3 border-0">-30%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 col-sm-4 mb-lg-0 mb-4 ps-0  d-flex justify-content-center">
+              <div class=" border-0 d-flex flex-column justify-content-between">
+                <img class="w-100 h-100 rounded-5" src="./assets/Product_image/Product-16.png" alt="">
+                <div class="card-body mt-2 d-flex flex-column justify-content-end">
+                  <h5 class="product-name fw-bold">SKINNY FIT JEANS</h5>
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <span>3.0/5</span>
+                    <div class="product-price d-flex align-items-center gap-3">
+                      <div class="d-flex gap-2">
+                        <h3 class="original-price m-0">$240</h3>
+                        <h3 class="discounted-price text-secondary m-0"><del>$260</del></h3>
+                      </div>
+                      <span
+                        class="discount bg-danger bg-opacity-25 py-2 text-danger rounded-pill text-center px-3 border-0">-20%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 col-sm-4 mb-lg-0 mb-4  d-flex h-100  ">
+              <div class=" d-flex flex-column justify-content-between border-0">
+                <img class="w-100 h-100 p-0 rounded-5" src="./assets/Product_image/Product-17.png" alt="">
+                <div class="card-body pb-0 ">
+                  <h5 class="product-name fw-bold">CHECKERED SHIRT</h5>
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <span>3.0/5</span>
+                    <h3 class="product-price m-0">$180</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 col-sm-4 mb-sm-0 mb-4  d-flex  ">
+              <div class=" border-0 d-flex flex-column justify-content-between">
+                <img class="w-100 rounded-5" src="./assets/Product_image/Product-18.png" alt="">
+                <div class="card-body  d-flex flex-column justify-content-end">
+                  <h5 class="product-name fw-bold">SLEEVE STRIPED T-SHIRT</h5>
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star-half fs-6" style="color: #FFD43B;"></i>
+                    <span>4.5/5</span>
+                    <div class="product-price d-flex align-items-center gap-3">
+                      <div class="d-flex gap-2">
+                        <h3 class="original-price m-0">$130</h3>
+                        <h3 class="discounted-price text-secondary m-0"><del>$160</del></h3>
+                      </div>
+                      <span
+                        class="discount bg-danger bg-opacity-25 py-2 text-danger rounded-pill text-center px-3 border-0">-30%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 col-sm-4 mb-lg-0 mb-4 ps-0  d-flex justify-content-center">
+              <div class=" border-0 d-flex flex-column justify-content-between">
+                <img class="w-100 rounded-5" src="./assets/Product_image/Product-19.png" alt="">
+                <div class="card-body mt-2 d-flex flex-column justify-content-end">
+                  <h5 class="product-name fw-bold">VERTICAL STRIPED SHIRT</h5>
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <span>4.0/5</span>
+                    <div class="product-price d-flex align-items-center gap-3">
+                      <div class="d-flex gap-2">
+                        <h3 class="original-price m-0">$212</h3>
+                        <h3 class="discounted-price text-secondary m-0"><del>$242</del></h3>
+                      </div>
+                      <span
+                        class="discount bg-danger bg-opacity-25 py-2 text-danger rounded-pill text-center px-3 border-0">-20%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 col-sm-4 mb-lg-0 mb-4  d-flex h-100  ">
+              <div class=" d-flex flex-column justify-content-between border-0">
+                <img class="w-100 h-100 p-0 rounded-5" src="./assets/Product_image/Product-20.png" alt="">
+                <div class="card-body pb-0 ">
+                  <h5 class="product-name fw-bold">COURAGE GRAPHIC T-SHIRT</h5>
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <span>3.0/5</span>
+                    <h3 class="product-price m-0">$145</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 col-sm-4 mb-sm-0 mb-4  d-flex  ">
+              <div class=" border-0 d-flex flex-column justify-content-between">
+                <img class="w-100 rounded-5" src="./assets/Product_image/Product-7.png" alt="">
+                <div class="card-body  d-flex flex-column justify-content-end">
+                  <h5 class="product-name fw-bold">LOOSE FIT BERMUDA SHORTS</h5>
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star-half fs-6" style="color: #FFD43B;"></i>
+                    <span>4.5/5</span>
+                    <h3 class="product-price m-0">$80</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination d-flex justify-content-between">
+            <div>
+              <div class=" btn border"><a class="text-decoration-none text-black" href="#"><i
+                    class="ri-arrow-left-fill pe-1"></i>Previous</a></div>
+            </div>
+            <div class="pagination-number d-flex border-0 gap-4 align-items-center">
+              <div class="bg-secondary-subtle rounded-2 py-1 px-3"><a class="text-decoration-none text-black"
+                  href="#">1</a></div>
+              <div class=""><a class="text-decoration-none text-black" href="#">2</a></div>
+              <div class=""><a class="text-decoration-none text-black" href="#">3</a></div>
+              <div class=""><a class="text-decoration-none text-black" href="#">...</a></div>
+              <div class=""><a class="text-decoration-none text-black" href="#">8</a></div>
+              <div class=""><a class="text-decoration-none text-black" href="#">9</a></div>
+              <div class=""><a class="text-decoration-none text-black" href="#">10</a></div>
+            </div>
+            <div>
+              <div class="btn border"><a class="text-black text-decoration-none" href="#">
+                  Next
+                  <i class="ri-arrow-right-fill ps-1"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-secondary-subtle ">
+    <div class="footer_main middle px-0  position-relative d-flex flex-column justify-content-center">
+      <div class="footer_top  w-100  position-absolute">
+        <div class="   bg-black p-sm-5 p-4 rounded-5">
+          <div class="row">
+            <h1 class="col-md-6 me-auto pb-md-0 pb-5 text-white mb-0 d-flex align-items-center">STAY UPTO DATE ABOUT OUR
+              LATEST OFFERS
+            </h1>
+            <div
+              class="col-lg-4 col-md-5 col-12 ms-auto d-flex flex-column  align-items-end justify-content-center px-0">
+              <div class="input-field w-100 bg-white rounded-5 mb-3 py-3 ps-3 pe-5 d-flex align-items-center ">
+                <i class="fa-regular fa-envelope fs-5 pt-1" style="color: #c3c6d1;"></i>
+                <input type="email" class="border-0 ps-sm-3 ps-2 bg-transparent py-0"
+                  placeholder="Enter your email address">
+              </div>
+              <button class="btn text-black bg-white rounded-5 w-100 py-3 px-4 ">Subscribe to Newsletter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-inside">
+        <div class="row m-0 py-5">
+          <div class="col-md-3   me-md-auto me-0 pb-md-0 pb-3 ">
+            <img class="mb-4" src="./assets/Brand-name/SHOP.CO.png" alt="">
+            <p class="mb-4">We have clothes that suits your style and which you’re proud to wear. From women to men.
+            </p>
+            <div class="social-media d-flex gap-2">
+              <div class="twitter">
+                <a class="nav-link " href="#">
+                  <i class="ri-twitter-line fs-4 border rounded-circle p-1 "></i>
+                </a>
+              </div>
+              <div class="facebook">
+                <a href="#" class="nav-link">
+                  <i class="ri-facebook-fill fs-4 border rounded-circle p-1"></i>
+                </a>
+              </div>
+              <div class="instagram">
+                <a href="#" class="nav-link">
+                  <i class="ri-instagram-line fs-4 border rounded-circle p-1 bg-black"></i>
+                </a>
+              </div>
+              <div class="github">
+                <a href="#" class="nav-link"><i class="ri-github-fill border rounded-circle p-1 fs-4"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 ms-md-auto ms-0 px-0 row ">
+            <div class="col-md-3 col-6 mb-md-0 mb-3">
+              <h5>Company</h5>
+              <p>About</p>
+              <p>Features</p>
+              <p>Works</p>
+              <p>Career</p>
+            </div>
+            <div class="col-md-3 col-6 mb-md-0 mb-3">
+              <h5>Help</h5>
+              <p>Customer Support</p>
+              <p>Delivery Details</p>
+              <p>Terms & Conditions</p>
+              <p>Privacy Policy</p>
+            </div>
+            <div class="col-md-3 col-6">
+              <h5>FAQ</h5>
+              <p>Account</p>
+              <p>Manage Deliveries</p>
+              <p>Orders</p>
+              <p>Payments</p>
+            </div>
+            <div class="col-md-3 col-6">
+              <h5>Resources</h5>
+              <p>Free eBooks</p>
+              <p>Development Tutorial</p>
+              <p>How to - Blog</p>
+              <p>Youtube Playlist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" footer-divider border-bottom border-secondary-subtle border-1 my-5"></div>
+
+      <div class="footer-last-part pb-5">
+        <div
+          class="d-flex justify-content-md-between flex-md-row flex-column justify-content-center align-items-center  p-0 m-0">
+          <p class="mb-md-0 mb-3 fs-5 text-secondary">Shop.co © 2000-2023, All Rights Reserved</p>
+          <div class="display-payment-option d-flex gap-2 ">
+            <div class="bg-white text-center my-0 px-3 rounded-2 d-flex align-items-center justify-content-center">
+              <i class="ri-visa-line fs-4" style="color: #1434CB;"></i>
+            </div>
+            <div class="bg-white text-center my-0 px-3 rounded-2 d-flex align-items-center justify-content-center">
+              <img class="w-100" src="assets/Payment-card-logo/Mastercard.png" alt="">
+            </div>
+            <div class="bg-white text-center my-0 px-3 rounded-2 d-flex align-items-center justify-content-center">
+              <img class="w-100" src="./assets/Payment-card-logo/Paypal.png" alt="">
+            </div>
+            <div class="bg-white text-center my-0 px-3 rounded-2 d-flex align-items-center justify-content-center">
+              <img class="w-100" src="assets/Payment-card-logo/ Pay.png" alt="">
+            </div>
+            <div class="bg-white text-center my-0 px-3 rounded-2 d-flex align-items-center justify-content-center">
+              <img class="w-100" src="assets/Payment-card-logo/G Pay.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+   function display(){
+    let responsiveBox = document.querySelector('.responsive-filter');
+    responsiveBox.style.display = 'block';
+   }
+  </script>
+</body>
+
+</html>

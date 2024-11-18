@@ -1,0 +1,292 @@
+body {
+  width: 100%;
+}
+
+.middle, .middle-custom {
+  width: 90% !important;
+  margin: 0 auto !important;
+}
+
+
+.slider {
+  background: black;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slide_container{
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.slide_content{
+  animation: scroll 10s linear infinite;
+  display: inline-flex;
+}
+
+@keyframes scroll {
+  from{
+    transform: translateX(0);
+}
+  to{
+    transform: translateX(-100%);
+}
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+
+#navbar {
+  background-color: white;
+}
+.nav-icon i:hover, .nav-icon svg:hover{
+  transform: scale(1.5);
+}
+
+
+#header1 {
+  background-color: #F2F0F1;
+}
+
+#header-content {
+  padding: 20px 0px;
+}
+
+h1 {
+  font-weight: 1000 !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header-img {
+  background: url('./assets/Vector/main-img.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#header-vector-1 {
+  bottom: 45%;
+  left: 35px;
+}
+
+#header-vector-2 {
+  top: 110px;
+  right: 55px;
+}
+
+#brand-logo {
+  background-color: black;
+}
+
+.product-rating i{
+  color: #FFD43B;
+}
+
+/* .brand_logo{
+  animation: brand-animation 10s linear infinite;
+} */
+/* .brand1{
+  width: 25% !important;
+  animation: brand-animation 2s linear infinite;
+  animation-delay: 2s;
+}
+.brand2{
+  width: 25% !important;
+  animation: brand-animation 2s linear infinite;
+  animation-delay: 2s;
+}
+.brand3{
+  width: 25% !important;
+  animation: brand-animation 2s linear infinite;
+  animation-delay: 4s;
+}
+.brand4{
+  width: 25% !important;
+  animation: brand-animation 2s linear infinite;
+  animation-delay: 6s;
+}
+.brand5{
+  width: 25% !important;
+  animation: brand-animation 2s linear infinite;
+  animation-delay: 8s;
+}
+.brand6{
+  width: 25% !important;
+  animation: brand-animation 2s linear infinite;
+  animation-delay: 10s;
+}
+.brand7{
+  width: 25% !important;
+  animation: brand-animation 2s linear infinite;
+  animation-delay: 12s;
+}
+.brand8{
+  width: 25% !important;
+  animation: brand-animation 2s linear infinite;
+  animation-delay: 14s;
+} */
+.brand_logo {
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
+#dress-style .position-absolute {
+  top: 30px;
+  left: 30px;
+}
+main{
+  padding-bottom: 150px;
+}
+.footer_top{
+  top: -20%;
+  /* margin: auto; */
+}
+.footer-inside{
+  margin-top: 150px;
+}
+.social-media i{
+  color: black !important;
+  background-color: white !important ;
+}
+.social-media i:hover{
+  /* background-color: black !important ; */
+  border: none !important;
+}
+.social-media .twitter i:hover{
+  background-color: #74C0FC !important;
+  color: white !important;
+}
+.social-media .instagram i:hover{
+  color: white !important;
+  background-color: red !important;
+}
+.social-media .facebook i:hover{
+  color: white !important;
+  background-color: #74C0FC !important;
+
+}
+.social-media .github i:hover{
+  color: white !important;
+  background-color: black !important;
+}
+a:hover{
+  color: gray !important;
+}
+button:hover{
+  background-color: white!important;
+  color: black!important;
+  border: 1px solid black !important;
+}
+
+#dress-style img:hover{
+  transform: scale(1.05);
+}
+#top-selling-product .card:hover{
+  transform: scale(1.05);
+}
+
+#top-selling-product img{
+  height: 300px !important;
+}
+#new-arrival .product-box:hover{
+  transform: scale(1.05);
+}
+input{
+  outline: none !important;
+}
+
+
+/* =============================
+======Prouct-details page======= 
+================================ */
+.color-box{
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+.brown-color{
+  background-color: #4F4631;
+}
+.green-color{
+  background-color: #314F4A;
+}
+.blue-color{
+  background-color: #31344F;
+}
+.card:hover{
+  transform: scale(1.02);
+}
+/* =============================
+======Category page======= 
+================================ */
+.filter-color .green{
+  background-color: #00C12B ;
+}
+.filter-color .red{
+  background-color: #F50606 ;
+}
+.filter-color .yellow{
+  background-color: #F5DD06;
+}
+.filter-color .orange{
+  background-color: #F57906 ;
+}
+.filter-color .skyblue{
+  background-color: #06CAF5 ;
+}
+.filter-color .blue{
+  background-color: #063AF5;
+}
+.filter-color .violet{
+  background-color:#7D06F5;
+}
+.filter-color .pink{
+  background-color: #F506A4;
+}
+.filter-color .white{
+  background-color: #fff;
+}
+.filter-color .black{
+  background-color:#000 ;
+}
+.category-products .card img{
+  height: 300px !important;
+}
+
+/* =============================
+======card page======= 
+================================ */
+.card-item{
+  height: 150px;
+  padding: 10px;
+}
+.card-item img{
+  height: 130px;
+}
